@@ -10,15 +10,14 @@
         android:id="@+id/zip_edit_text"
         android:layout_width="@dimen/zerodp"
         android:layout_height="70dp"
-        android:layout_marginLeft="@dimen/eightdp"
-        android:layout_marginStart="@dimen/eightdp"
         android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
         android:background="@drawable/search_border"
         android:hint="Zipcode"
         android:padding="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/zip_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/zip_button"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageButton
         android:id="@+id/zip_button"
@@ -37,11 +36,9 @@
         android:id="@+id/recycler"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zip_edit_text">
-
     </android.support.v7.widget.RecyclerView>
 
 
