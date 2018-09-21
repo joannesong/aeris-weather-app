@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eightdp"
+        android:layout_marginLeft="@dimen/eightdp"
+        android:layout_marginRight="@dimen/eightdp"
+        android:layout_marginStart="@dimen/eightdp"
+        android:layout_marginTop="@dimen/eightdp"
+        android:gravity="center"
+        android:textSize="@dimen/twentyfivesp"
+        android:textStyle="bold"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintTop_toTopOf="parent"
+        tools:text="09/21/2018" />
+
+    <ImageView
+        android:id="@+id/forecast_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tool:layout_constraintEnd_toEndOf="@+id/date"
+        tool:layout_constraintStart_toStartOf="@+id/date"
+        tool:layout_constraintTop_toBottomOf="@+id/date"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/max_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/twentyfivesp"
+        tool:layout_constraintEnd_toEndOf="@+id/forecast_image"
+        tool:layout_constraintStart_toStartOf="@+id/forecast_image"
+        tool:layout_constraintTop_toBottomOf="@+id/forecast_image"
+        tools:text="High: 78\u00B0 C" />
+
+    <TextView
+        android:id="@+id/min_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/twentyfivesp"
+        tool:layout_constraintEnd_toEndOf="@+id/forecast_image"
+        tool:layout_constraintStart_toStartOf="@+id/forecast_image"
+        tool:layout_constraintTop_toBottomOf="@+id/max_temp"
+        tools:text="Low: 70\u00B0 C" />
+
+</android.support.constraint.ConstraintLayout>
